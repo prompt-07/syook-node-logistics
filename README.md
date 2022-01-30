@@ -1,15 +1,15 @@
 ### node-logistics
 
->Step 1 : Clone repo
->Step 2 : install necessary dependencies
+>Step 1 : Clone repo\
+>Step 2 : install necessary dependencies\
 >Step 3 : run **npm run devStart** in terminal
 
 ---
 
 ##### useful urls and payloads for testing
 
-1. ITEMS
-http://localhost:8000/api/items/create
+1. ITEMS\
+http://localhost:8000/api/items/create \
 payload
 ```json
 {
@@ -18,7 +18,7 @@ payload
 }
 ```
 
-http://localhost:8000/api/items/update
+http://localhost:8000/api/items/update \
 payload
 ```json
 {
@@ -30,9 +30,9 @@ payload
 
 2. CUSTOMER
 
-http://localhost:8000/api/customer/get/Demo%20User
+http://localhost:8000/api/customer/get/Demo%20User \
 
-http://localhost:8000/api/customer/create
+http://localhost:8000/api/customer/create \
 payload
 ```json
 {
@@ -43,7 +43,7 @@ payload
 ---
 
 3. LOGIN
-http://localhost:8000/user/login
+http://localhost:8000/user/login \
 payload
 ```json
 {
@@ -54,7 +54,7 @@ payload
 ---
 
 4. ORDERS
-http://localhost:8000/api/orders/create
+http://localhost:8000/api/orders/create \
 payload
 ```json
 {
@@ -62,7 +62,7 @@ payload
     "customerId": "61f6b38000bdc9e79d888206"
 }
 ```
-http://localhost:8000/api/orders/update
+http://localhost:8000/api/orders/update \
 payload
 ```json
 {
@@ -73,7 +73,7 @@ payload
 ---
 
 5. DELIVERY VEHICLES
-http://localhost:8000/api/delivery-vehicle/create
+http://localhost:8000/api/delivery-vehicle/create \
 payload
 ```json
 {
