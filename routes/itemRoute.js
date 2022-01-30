@@ -1,6 +1,6 @@
 const {Router} = require("express");
 const itemRoute = Router()
-const itemController = require('../controller/itemController')
+const itemController = require('../controller/ItemController')
 
 
 itemRoute.get('/get/:itemName',itemController.readItem)

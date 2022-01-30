@@ -1,1 +1,2 @@
 node_modules
+#.env is req for db and port details
