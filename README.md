@@ -28,7 +28,7 @@ payload
 ```
 ---
 
-2. CUSTOMER
+2. CUSTOMER\
 
 http://localhost:8000/api/customer/get/Demo%20User \
 
@@ -42,7 +42,7 @@ payload
 ```
 ---
 
-3. LOGIN
+3. LOGIN\
 http://localhost:8000/user/login \
 payload
 ```json
@@ -53,7 +53,7 @@ payload
 ```
 ---
 
-4. ORDERS
+4. ORDERS\
 http://localhost:8000/api/orders/create \
 payload
 ```json
@@ -72,7 +72,7 @@ payload
 ```
 ---
 
-5. DELIVERY VEHICLES
+5. DELIVERY VEHICLES\
 http://localhost:8000/api/delivery-vehicle/create \
 payload
 ```json
