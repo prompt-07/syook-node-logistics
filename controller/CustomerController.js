@@ -26,9 +26,5 @@ module.exports.create_customer = async (req, res) => {
 
 
 
-
-
-
-
 //   get_customer
 //   create_customer

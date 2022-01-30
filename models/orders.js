@@ -37,7 +37,6 @@ orderSchema.pre('save', async function(next){
       const index = await this.constructor.count()
       this.orderNumber = index + 1
     }
-    
     //console.log(this)
     next()
 });

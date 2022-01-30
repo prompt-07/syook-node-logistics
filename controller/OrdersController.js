@@ -1,4 +1,3 @@
-const res = require('express/lib/response')
 const Orders = require('../models/orders')
 const Customers = require('../models/customer')
 const DeliveryVehicles = require('../models/deliveryVehicle')
@@ -43,11 +42,31 @@ module.exports.create_order = async (req, res) => {
     }
 }
 
+module.exports.update_order = async (req, res) => {
+    try{
+     const {orderId, isDelivered} = req.body
+     if(isDelivered){
+         const order = await Orders.findOne({_id: orderId})
+         if(order){
+            vehicleId = order.deliveryVehicleId
+            order.isDelivered = true
+            await order.save()
+            const deliveryVehicle = await DeliveryVehicles.findOne({_id : vehicleId})
+            deliveryVehicle.activeOrdersCount = deliveryVehicle.activeOrdersCount-1
+            await deliveryVehicle.save()
 
-
-
-
+            res.send(order)
+         }
+         else
+            res.status(404).json({message: 'Invalid order Id'})
+     }
+    } catch(err) {
+        //res.status(500).json(err)
+        res.status(500).json({message: 'Failed To Update Order'})
+    }
+}
 
 
 //   get_order
 //   create_order
+//   update_order

@@ -1,4 +1,3 @@
-const res = require('express/lib/response')
 const DeliveryVehicles = require('../models/deliveryVehicle')
 
 module.exports.read_deliveryVehicle = async (req, res) => {
@@ -27,20 +26,6 @@ module.exports.create_deliveryVehicle = async (req, res) => {
         //{message: 'Failed To Create Delivery Vehicle'}
     }
 }
-
-//   module.exports.read_deliveryVehicle = async (req, res) => {
-//     try{
-      
-//     } catch(e) {
-//         res.status(500).json({message: 'Unable To Fetch Delivery Vehicle'})
-//     }
-//   }
-
-
-
-
-
-
 
 
 //   read_deliveryVehicle

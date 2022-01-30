@@ -5,6 +5,6 @@ const deliveryVehicleController = require('../controller/DeliveryVehicleControll
 
 deliveryVehicleRoute.get('/get/:vehicleRegistrationNumber',deliveryVehicleController.read_deliveryVehicle)
 deliveryVehicleRoute.post('/create',deliveryVehicleController.create_deliveryVehicle)
-// deliveryVehicleRoute.post('/update',deliveryVehicleController.updateItem)
+
 
 module.exports=deliveryVehicleRoute
