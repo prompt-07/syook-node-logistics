@@ -31,15 +31,16 @@ const orderSchema = new mongoose.Schema({
 })
 
 
-orderSchema.pre('save', async function(){
+orderSchema.pre('save', async function(next){
     const currRecord = this
     if(!this.orderNumber){
       const index = await this.constructor.count()
       this.orderNumber = index + 1
     }
     
-    console.log(this)
+    //console.log(this)
     next()
 });
+
 
 module.exports = mongoose.model('Orders',orderSchema)
