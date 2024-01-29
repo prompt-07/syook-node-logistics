@@ -7,6 +7,7 @@
 ---
 
 ##### useful urls and payloads for testing
+login first and get jwt
 
 1. ITEMS\
 http://localhost:8000/api/items/create \
@@ -30,7 +31,7 @@ payload
 
 2. CUSTOMER\
 
-http://localhost:8000/api/customer/get/Demo%20User \
+http://localhost:8000/api/customer/get/Demo%20User 
 
 http://localhost:8000/api/customer/create \
 payload
@@ -78,7 +79,7 @@ payload
 ```json
 {
     "registrationNumber": "VV7812",
-    "vehicleType": "bus",
+    "vehicleType": "truck",
     "city": "Pune"
 }
 ```
